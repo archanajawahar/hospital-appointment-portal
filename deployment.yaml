@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: hospital-appointment
-          image: YOUR_DOCKERHUB_USERNAME/hospital-appointment:latest
+          image: archanajawahar14/hospital-appointment:latest
           ports:
             - containerPort: 80
           readinessProbe:
