@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarePoint Hospital | Appointments</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f2f7fb;
+            color: #203247;
+        }
+        header {
+            background: #087f8c;
+            color: white;
+            padding: 24px 8%;
+        }
+        header h1 { margin: 0 0 8px; }
+        nav { margin-top: 16px; }
+        nav a {
+            color: white;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+        main { max-width: 1100px; margin: 28px auto; padding: 0 20px; }
+        .banner {
+            background: #d8f3f0;
+            padding: 22px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+        }
+        .doctors {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 18px;
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 3px 12px #17324d12;
+        }
+        .card h3 { color: #087f8c; margin-top: 0; }
+        .slot {
+            display: inline-block;
+            padding: 7px 10px;
+            margin: 4px 3px 4px 0;
+            border-radius: 6px;
+            background: #e3f6e8;
+            color: #176b35;
+        }
+        .announcement {
+            border-left: 5px solid #087f8c;
+            background: white;
+            padding: 16px;
+            margin: 12px 0;
+        }
+        footer {
+            background: #203247;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 35px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CarePoint Hospital</h1>
+        <p>Your health, our priority — book your consultation.</p>
+        <nav>
+            <a href="#doctors">Doctors</a>
+            <a href="#appointments">Appointment Slots</a>
+            <a href="#announcements">Announcements</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <h2>Welcome to Online Appointments</h2>
+            <p>Explore our medical specialists and available consultation times.</p>
+            <strong>Demo portal:</strong> displayed appointment slots are examples, not live bookings.
+        </section>
+
+        <section id="doctors">
+            <h2>Our Doctors</h2>
+            <div class="doctors">
+                <article class="card">
+                    <h3>Dr. Ananya Rao</h3>
+                    <p><strong>Specialization:</strong> Cardiology</p>
+                    <p><strong>Consultation:</strong> Mon–Fri, 9:00 AM–1:00 PM</p>
+                    <p><strong>Available slots:</strong></p>
+                    <span class="slot">9:30 AM</span>
+                    <span class="slot">10:30 AM</span>
+                    <span class="slot">12:00 PM</span>
+                </article>
+
+                <article class="card">
+                    <h3>Dr. Rahul Menon</h3>
+                    <p><strong>Specialization:</strong> Pediatrics</p>
+                    <p><strong>Consultation:</strong> Mon–Sat, 10:00 AM–2:00 PM</p>
+                    <p><strong>Available slots:</strong></p>
+                    <span class="slot">10:30 AM</span>
+                    <span class="slot">11:30 AM</span>
+                    <span class="slot">1:00 PM</span>
+                </article>
+
+                <article class="card">
+                    <h3>Dr. Meera Iyer</h3>
+                    <p><strong>Specialization:</strong> Dermatology</p>
+                    <p><strong>Consultation:</strong> Tue–Sat, 2:00 PM–6:00 PM</p>
+                    <p><strong>Available slots:</strong></p>
+                    <span class="slot">2:30 PM</span>
+                    <span class="slot">4:00 PM</span>
+                    <span class="slot">5:30 PM</span>
+                </article>
+            </div>
+        </section>
+
+        <section id="appointments">
+            <h2>Appointment Information</h2>
+            <div class="card">
+                <p>Choose a doctor and contact the hospital reception to confirm an appointment.</p>
+                <p><strong>Reception:</strong> 044-5550-0100 (sample number)</p>
+            </div>
+        </section>
+
+        <section id="announcements">
+            <h2>Hospital Announcements</h2>
+            <div class="announcement">
+                <strong>Health Check-up Camp</strong>
+                <p>Preventive health screening is scheduled for Saturday.</p>
+            </div>
+            <div class="announcement">
+                <strong>New Pediatric Consultation Hours</strong>
+                <p>Additional morning consultation slots are available this week.</p>
+            </div>
+            <div class="announcement">
+                <strong>Version 1 — Initial Portal Release</strong>
+                <p>CarePoint online appointment information portal is available.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CarePoint Hospital | Sample coursework application</p>
+    </footer>
+</body>
+</html>
